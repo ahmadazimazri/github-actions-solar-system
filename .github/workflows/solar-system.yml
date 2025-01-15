@@ -23,7 +23,7 @@ jobs:
             echo "hello there"
 
         - name: something else
-          if: env.DRY_RUN != true
+          if: ${{env.DRY_RUN}} != true
           run: echo "bye"
 
         # - name: Setup NodeJS Version
